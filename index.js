@@ -1,21 +1,17 @@
 
 // Code your solutions in this file
-function printBadges(array) {
-
-  for (let i = 0; i < array.length; i++) {
-  console.log('Welcome ${array[i]}! You are employee #${i + 1}.');
+function printBadges (names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(`Welcome ${names[i]}! You are employee #${[i + 1 ]}.`);
   }
-
-  return array;
+  return names;
 }
 
+function tailsNeverFails() {
+  let tails = 0;
 
-function tailsNeverFails(){
-  let i = 0;
-  while (Math.random() >= 0.5)
-    {
-      i++;
-    }
-
-  return 'You got ${i} tails in a row!';
+  while (Math.random() >= 0.5) {
+    tails++;
+  }
+  return `You got ${tails} tails in a row!`;
 }
